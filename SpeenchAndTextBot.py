@@ -96,7 +96,7 @@ class Bot:
         """
 
         if self.mixer:
-            mix.init(self.mixer)
+            mix.init(devicename = self.mixer)
         else: 
             mix.init()
         mix.music.load(file_url)
